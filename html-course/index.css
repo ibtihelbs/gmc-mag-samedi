@@ -21,3 +21,28 @@ body {
   background-color: rgb(10, 10, 66);
   color: white;
 }
+
+h1 {
+  color: brown;
+  font-size: 48px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  letter-spacing: -5px;
+  line-height: 80px;
+}
+h2 {
+  border: solid 3px orange;
+  margin: 30px;
+  padding: 15px;
+  width: 150px;
+}
+#bg-styling {
+  background-color: yellowgreen;
+  padding: 15px;
+  background-image: url(./images/icons8-css3-100.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+  display: none;
+}
