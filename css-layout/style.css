@@ -1,0 +1,13 @@
+#container {
+  padding: 8px;
+  background-color: rgb(108, 108, 231);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.child {
+  background-color: rgb(253, 207, 121);
+}
