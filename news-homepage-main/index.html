@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -34,21 +34,28 @@
           <a href="#">Categories</a>
         </li>
       </ul>
+      <img src="./assets/images/icon-menu.svg" alt="menu" class="menu-btn" />
     </nav>
 
     <main class="grid-container">
       <div class="main-article">
-        <img
-          src="./assets/images/image-web-3-desktop.jpg"
-          alt="image-web-3-desktop"
-        />
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <a href="#"> Read more</a>
+        <div class="img-wrap">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="image-web-3-desktop"
+          />
+        </div>
+        <div class="grid-2-cols">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="flex-col">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" id="btn"> Read more</a>
+          </div>
+        </div>
       </div>
 
       <div class="news">
@@ -57,6 +64,7 @@
           <h2>Hydrogen VS Electric Cars</h2>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
+        <hr />
         <div class="articles">
           <h2>The Downsides of AI Artistry</h2>
           <p>
@@ -64,6 +72,7 @@
             generation?
           </p>
         </div>
+        <hr />
         <div class="articles">
           <h2>Is VC Funding Drying Up?</h2>
           <p>

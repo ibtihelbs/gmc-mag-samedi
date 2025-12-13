@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "inter";
+  src: url(./assets/fonts/Inter.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  max-width: 100%;
+  font-family: "inter";
+}
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+body {
+  padding: 32px 80px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.menu-btn {
+  display: none;
+}
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+}
+.news {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.news h1 {
+  color: var(--Soft-orange);
+}
+.news p,
+.news hr {
+  color: var(--Dark-grayish-blue);
+}
+.news h2 {
+  margin-bottom: 16px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.main-article {
+  grid-column: span 2;
+}
+.img-wrap {
+  height: 50%;
+  width: 100%;
+}
+.img-wrap img {
+  height: 100%;
+  width: 100%;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: start;
+}
+#btn {
+  padding: 8px 16px;
+
+  background-color: var(--Soft-red);
+}
+.grid-2-cols {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.footer-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.footer-item div {
+  grid-column: span 2;
+}
+.footer-item h1 {
+  color: var(--Soft-red);
+}
+h4:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    min-height: 130vh;
+  }
+  .main-article {
+    grid-column: span 1;
+  }
+  .flex-col {
+    gap: 8px;
+  }
+  .grid-2-cols {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    margin-bottom: 4px;
+  }
+  ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
