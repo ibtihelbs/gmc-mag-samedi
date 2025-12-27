@@ -121,3 +121,38 @@ for (let i = 0; i < studentsInfo.length; i++) {
     console.log("below average");
   }
 }
+const isTrue = [true, false, true, true, false, false, false];
+
+let countTrue = 0;
+for (let k = 0; k < isTrue.length; k++) {
+  if (isTrue[k] == true) {
+    console.log(isTrue[k], k, countTrue);
+    countTrue = countTrue + 1;
+  }
+}
+console.log(countTrue);
+
+let z = 8;
+
+function factorialFn(n) {
+  let factoriel = 1;
+
+  for (let i = 1; i <= n; i++) {
+    factoriel = factoriel * i;
+  }
+  console.log("factorial of ", n, " = ", factoriel);
+  return factoriel;
+}
+
+function add(a, b) {
+  let res = a + b;
+  console.log("a = ", a);
+  console.log("b = ", b);
+  console.log("a + b = ", res);
+}
+
+add(1250, 885);
+add(895, 755);
+factorialFn(z);
+factorialFn(9);
+console.log(factorialFn(7) / 5);
