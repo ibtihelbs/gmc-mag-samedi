@@ -107,6 +107,17 @@ let average = score / studentsInfo.length;
 
 if (studentsInfo[7].progress > average) {
   console.log("above average");
+} else if (studentsInfo[7].progress === average) {
+  console.log("equal to average ");
 } else {
   console.log("below average");
+}
+for (let i = 0; i < studentsInfo.length; i++) {
+  if (studentsInfo[i].progress > average) {
+    console.log("above average");
+  } else if (studentsInfo[i].progress === average) {
+    console.log("equal to average ");
+  } else {
+    console.log("below average");
+  }
 }
