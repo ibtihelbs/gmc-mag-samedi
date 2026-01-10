@@ -6,6 +6,7 @@ const li = document.querySelectorAll("li");
 console.log(li);
 const button = document.querySelector("button");
 const container = document.querySelector("#container");
+const userText = document.querySelector("#userText");
 for (let i = 0; i < li.length; i++) {
   li[i].style.backgroundColor = "lightblue";
 }
@@ -24,4 +25,7 @@ input.addEventListener("change", function () {
 
 button.addEventListener("click", function () {
   container.style.backgroundColor = randomColor();
+});
+userText.addEventListener("change", function () {
+  p.innerHTML = userText.value;
 });
